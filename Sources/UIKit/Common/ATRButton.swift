@@ -5,11 +5,11 @@
 import UIKit
 import Framezilla
 
-public class ATRButton: UIButton {
+open class ATRButton: UIButton {
 
-    public var touchRadiusInsets: UIEdgeInsets = 10
+    open var touchRadiusInsets: UIEdgeInsets = 10
 
-    override public func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    override open func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         bounds.inset(by: -touchRadiusInsets).contains(point)
     }
 
@@ -21,7 +21,7 @@ public class ATRButton: UIButton {
         super.init(frame: .zero)
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
