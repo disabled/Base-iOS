@@ -1,10 +1,10 @@
 //
-//  Copyright © 2019 Zazzi. All rights reserved.
+//  Copyright © 2019 Rosberry. All rights reserved.
 //
 
 import UIKit
 
-extension UIView {
+public extension UIView {
 
     func setupShadow(radius: CGFloat,
                      offsetX: CGFloat,
