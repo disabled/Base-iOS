@@ -1,4 +1,4 @@
-scheme='Base-iOS-Package'
+scheme='Base-Package'
 platform='iOS Simulator,name=iPhone 11,OS=14.3'
 
 build:
