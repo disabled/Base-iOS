@@ -7,7 +7,7 @@ import UIKit
 /// Based on screen size
 public final class ScreenVariable<T>: ConditionVariable<T> {
 
-    public static func heightRelated<T>(s small: T, m medium: T, l large: T) -> ScreenVariable<T> {
+    public static func heightRelated(s small: T, m medium: T, l large: T) -> ScreenVariable<T> {
         let screenHeight = UIScreen.main.bounds.height
         return .init {
             ConditionValue(value: small) { () -> Bool in
@@ -22,7 +22,7 @@ public final class ScreenVariable<T>: ConditionVariable<T> {
         }
     }
 
-    public static func widthRelated<T>(s small: T, m medium: T, l large: T) -> ScreenVariable<T> {
+    public static func widthRelated(s small: T, m medium: T, l large: T) -> ScreenVariable<T> {
         let screenWidth = UIScreen.main.bounds.width
         return ScreenVariable<T> {
             ConditionValue(value: small) { () -> Bool in
