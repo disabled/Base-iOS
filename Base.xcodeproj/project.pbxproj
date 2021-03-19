@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -22,10 +22,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		36BADEBE2604A7D70067D910 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; };
+		36BADEBF2604A7D70067D910 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36BADEC42604A7DD0067D910 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; };
+		36BADEC52604A7DD0067D910 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B73494187571D8F19171E19 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
 		8C1A44E49AB7B878CF85F1C6 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
-		CDF84C2EB7F22A1FC7A732CE /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
-		E0974544AEF45FA3A5CA2B0C /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
 		OBJ_121 /* ConditionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConditionValue.swift */; };
 		OBJ_122 /* ConditionVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ConditionVariable.swift */; };
 		OBJ_123 /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* BuildConfiguration.swift */; };
@@ -108,9 +110,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		36BADEC02604A7D70067D910 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36BADEBF2604A7D70067D910 /* Framezilla.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BADEC62604A7DD0067D910 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36BADEC52604A7DD0067D910 /* Framezilla.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2B244A84A57424A2E25BC430 /* Framezilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framezilla.framework; path = Carthage/Build/iOS/Framezilla.framework; sourceTree = SOURCE_ROOT; };
-		"Base::Base::Product" /* Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36BADEBD2604A7D70067D910 /* Framezilla.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Framezilla.xcframework; path = Carthage/Build/Framezilla.xcframework; sourceTree = "<group>"; };
+		"Base::Base::Product" /* Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Base::BaseTests::Product" /* BaseTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = BaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* ConditionValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionValue.swift; sourceTree = "<group>"; };
 		OBJ_100 /* SubviewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubviewsTests.swift; sourceTree = "<group>"; };
@@ -120,8 +148,6 @@
 		OBJ_105 /* ViewUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUpdateTests.swift; sourceTree = "<group>"; };
 		OBJ_106 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_11 /* ConditionVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionVariable.swift; sourceTree = "<group>"; };
-		OBJ_110 /* xcfilelists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = xcfilelists; sourceTree = SOURCE_ROOT; };
-		OBJ_111 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
 		OBJ_112 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		OBJ_113 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		OBJ_114 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
@@ -195,7 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0974544AEF45FA3A5CA2B0C /* Framezilla.framework in Frameworks */,
+				36BADEC42604A7DD0067D910 /* Framezilla.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF84C2EB7F22A1FC7A732CE /* Framezilla.framework in Frameworks */,
+				36BADEBE2604A7D70067D910 /* Framezilla.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +248,7 @@
 		A48E4262BF102B137BA5729C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36BADEBD2604A7D70067D910 /* Framezilla.xcframework */,
 				2B244A84A57424A2E25BC430 /* Framezilla.framework */,
 			);
 			name = Frameworks;
@@ -375,22 +402,19 @@
 			path = FloatingPoint;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_74 /* Tests */,
 				OBJ_107 /* Products */,
-				OBJ_110 /* xcfilelists */,
-				OBJ_111 /* Carthage */,
 				OBJ_112 /* Cartfile.resolved */,
 				OBJ_113 /* Makefile */,
 				OBJ_114 /* Cartfile */,
 				OBJ_115 /* README.md */,
 				A48E4262BF102B137BA5729C /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* Weak */ = {
@@ -626,7 +650,7 @@
 			buildPhases = (
 				OBJ_120 /* Sources */,
 				OBJ_165 /* Frameworks */,
-				E5EE4FDCD493CB33C233EDC8 /* Carthage */,
+				36BADEC02604A7D70067D910 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -643,7 +667,6 @@
 			buildPhases = (
 				OBJ_181 /* Sources */,
 				OBJ_200 /* Frameworks */,
-				7ED22D1EB9D75660A32E9003 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -661,7 +684,7 @@
 			buildPhases = (
 				OBJ_170 /* Sources */,
 				F6534087B3D212E0FA2D3C56 /* Frameworks */,
-				A1CD25F955AAB188665A9111 /* Carthage */,
+				36BADEC62604A7DD0067D910 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -687,7 +710,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_107 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -699,69 +722,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7ED22D1EB9D75660A32E9003 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/BaseTests-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/BaseTests-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		A1CD25F955AAB188665A9111 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/BasePackageDescription-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/BasePackageDescription-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		E5EE4FDCD493CB33C233EDC8 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/Base-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/Base-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_120 /* Sources */ = {
