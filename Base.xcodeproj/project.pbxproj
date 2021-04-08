@@ -23,9 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		36BADEBE2604A7D70067D910 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; };
-		36BADEBF2604A7D70067D910 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36BADEC42604A7DD0067D910 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; };
-		36BADEC52604A7DD0067D910 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B73494187571D8F19171E19 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
 		8C1A44E49AB7B878CF85F1C6 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
 		OBJ_121 /* ConditionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConditionValue.swift */; };
@@ -109,31 +107,6 @@
 			remoteInfo = BaseTests;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		36BADEC02604A7D70067D910 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				36BADEBF2604A7D70067D910 /* Framezilla.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36BADEC62604A7DD0067D910 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				36BADEC52604A7DD0067D910 /* Framezilla.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B244A84A57424A2E25BC430 /* Framezilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framezilla.framework; path = Carthage/Build/iOS/Framezilla.framework; sourceTree = SOURCE_ROOT; };
@@ -650,7 +623,6 @@
 			buildPhases = (
 				OBJ_120 /* Sources */,
 				OBJ_165 /* Frameworks */,
-				36BADEC02604A7D70067D910 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -684,7 +656,6 @@
 			buildPhases = (
 				OBJ_170 /* Sources */,
 				F6534087B3D212E0FA2D3C56 /* Frameworks */,
-				36BADEC62604A7DD0067D910 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
