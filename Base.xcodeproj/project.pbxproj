@@ -22,7 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		36BADEBE2604A7D70067D910 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; };
 		36BADEC42604A7DD0067D910 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; };
 		4B73494187571D8F19171E19 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
 		8C1A44E49AB7B878CF85F1C6 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
@@ -67,9 +66,6 @@
 		OBJ_159 /* UIView+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* UIView+Sugar.swift */; };
 		OBJ_160 /* UIViewController+Dismissal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* UIViewController+Dismissal.swift */; };
 		OBJ_161 /* UIViewController+KeyboardNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* UIViewController+KeyboardNotifications.swift */; };
-		OBJ_162 /* AnyEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* AnyEquatable.swift */; };
-		OBJ_163 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Update.swift */; };
-		OBJ_164 /* ViewUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* ViewUpdate.swift */; };
 		OBJ_171 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_182 /* ConcreteValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* ConcreteValueTests.swift */; };
 		OBJ_183 /* ConditionValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* ConditionValueTests.swift */; };
@@ -165,9 +161,6 @@
 		OBJ_67 /* UIView+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Sugar.swift"; sourceTree = "<group>"; };
 		OBJ_68 /* UIViewController+Dismissal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dismissal.swift"; sourceTree = "<group>"; };
 		OBJ_69 /* UIViewController+KeyboardNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardNotifications.swift"; sourceTree = "<group>"; };
-		OBJ_71 /* AnyEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEquatable.swift; sourceTree = "<group>"; };
-		OBJ_72 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
-		OBJ_73 /* ViewUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUpdate.swift; sourceTree = "<group>"; };
 		OBJ_77 /* ConcreteValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteValueTests.swift; sourceTree = "<group>"; };
 		OBJ_78 /* ConditionValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionValueTests.swift; sourceTree = "<group>"; };
 		OBJ_79 /* ConditionVariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionVariableTests.swift; sourceTree = "<group>"; };
@@ -202,7 +195,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BADEBE2604A7D70067D910 /* Framezilla.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,20 +445,9 @@
 				OBJ_34 /* Foundation */,
 				OBJ_37 /* Swift */,
 				OBJ_53 /* UIKit */,
-				OBJ_70 /* ViewUpdate */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_70 /* ViewUpdate */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_71 /* AnyEquatable.swift */,
-				OBJ_72 /* Update.swift */,
-				OBJ_73 /* ViewUpdate.swift */,
-			);
-			path = ViewUpdate;
-			sourceTree = "<group>";
 		};
 		OBJ_74 /* Tests */ = {
 			isa = PBXGroup;
@@ -740,9 +721,6 @@
 				OBJ_159 /* UIView+Sugar.swift in Sources */,
 				OBJ_160 /* UIViewController+Dismissal.swift in Sources */,
 				OBJ_161 /* UIViewController+KeyboardNotifications.swift in Sources */,
-				OBJ_162 /* AnyEquatable.swift in Sources */,
-				OBJ_163 /* Update.swift in Sources */,
-				OBJ_164 /* ViewUpdate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,6 +775,7 @@
 		OBJ_118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -829,6 +808,7 @@
 		OBJ_119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -843,6 +823,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
