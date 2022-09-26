@@ -22,9 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		36BADEC42604A7DD0067D910 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BADEBD2604A7D70067D910 /* Framezilla.xcframework */; };
-		4B73494187571D8F19171E19 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
-		8C1A44E49AB7B878CF85F1C6 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B244A84A57424A2E25BC430 /* Framezilla.framework */; };
+		01D1A84328E152FA00FBFD08 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D1A84228E152FA00FBFD08 /* Framezilla.xcframework */; };
+		01D1A84428E152FA00FBFD08 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01D1A84228E152FA00FBFD08 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		OBJ_121 /* ConditionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConditionValue.swift */; };
 		OBJ_122 /* ConditionVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ConditionVariable.swift */; };
 		OBJ_123 /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* BuildConfiguration.swift */; };
@@ -104,9 +103,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		01D1A84528E152FA00FBFD08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01D1A84428E152FA00FBFD08 /* Framezilla.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2B244A84A57424A2E25BC430 /* Framezilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framezilla.framework; path = Carthage/Build/iOS/Framezilla.framework; sourceTree = SOURCE_ROOT; };
-		36BADEBD2604A7D70067D910 /* Framezilla.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Framezilla.xcframework; path = Carthage/Build/Framezilla.xcframework; sourceTree = "<group>"; };
+		01D1A84228E152FA00FBFD08 /* Framezilla.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Framezilla.xcframework; path = Carthage/Build/Framezilla.xcframework; sourceTree = "<group>"; };
 		"Base::Base::Product" /* Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Base::BaseTests::Product" /* BaseTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = BaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* ConditionValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionValue.swift; sourceTree = "<group>"; };
@@ -179,7 +191,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C1A44E49AB7B878CF85F1C6 /* Framezilla.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +198,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BADEC42604A7DD0067D910 /* Framezilla.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D1A84328E152FA00FBFD08 /* Framezilla.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				OBJ_201 /* Base.framework in Frameworks */,
-				4B73494187571D8F19171E19 /* Framezilla.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +223,7 @@
 		A48E4262BF102B137BA5729C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36BADEBD2604A7D70067D910 /* Framezilla.xcframework */,
-				2B244A84A57424A2E25BC430 /* Framezilla.framework */,
+				01D1A84228E152FA00FBFD08 /* Framezilla.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -604,6 +613,7 @@
 			buildPhases = (
 				OBJ_120 /* Sources */,
 				OBJ_165 /* Frameworks */,
+				01D1A84528E152FA00FBFD08 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
